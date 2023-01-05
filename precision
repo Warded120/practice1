@@ -1,0 +1,21 @@
+/*Враховуючи що верста дорівнює приблизно , 1 1,067 , кілометра
+напишіть програму щоб вона перетворювала версти в кілометри , .
+Програма має пропонувати користувачу ввести кількість верст і вивести
+на екран скільки це буде кілометрів Відповідь округліть до трьох знаків .
+після коми .*/
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+//using bint_t = long long int;
+
+int main()
+{
+	float mile, km;
+	cout << "Enter some miles : ";
+	cin >> mile;
+	km = mile * 1.067;
+	cout << mile << " miles in kilometers is : ";
+	printf("%.3f \n", km);
+}
